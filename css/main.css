@@ -1,0 +1,339 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  margin: 0 auto;
+  padding: 0px;
+  font-family: "fatfrank",sans-serif; }
+
+.col-xs-12 {
+  -webkit-transition: .5s;
+          transition: .5s; }
+
+.col-md-4 {
+  -webkit-transition: .5s;
+          transition: .5s; }
+
+.glyphicon {
+  top: 0px; }
+
+.navbar-nav {
+  float: none;
+  margin: 0px !important;
+  margin-top: 10px; }
+
+.backbtn {
+  margin: 0px 0px 0px 10px; }
+  .backbtn a {
+    color: #737373;
+    margin-right: 15px;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    vertical-align: top;
+    -webkit-perspective: 600px;
+            perspective: 600px;
+    -webkit-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%; }
+    .backbtn a:hover span {
+      background: #737373;
+      -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+              transform: translate3d(0px, 0px, -30px) rotateX(90deg); }
+    .backbtn a span {
+      display: block;
+      position: relative;
+      padding: 0 3px;
+      -webkit-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+      -webkit-transform-origin: 50% 0%;
+          -ms-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      margin-top: 10px; }
+      .backbtn a span:after {
+        content: "\e091";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0 3px;
+        color: #fff;
+        background: #737373;
+        -webkit-transform-origin: 50% 0%;
+            -ms-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+        -webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+                transform: translate3d(0px, 105%, 0px) rotateX(-90deg); }
+
+.navbar-default {
+  background-image: none;
+  border-radius: 0px;
+  background-color: white;
+  border: none;
+  box-shadow: none; }
+
+/** \e091 **/
+.name {
+  font-size: 1.6em;
+  text-align: center; }
+  .name a {
+    color: #737373;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    vertical-align: top;
+    -webkit-perspective: 600px;
+            perspective: 600px;
+    -webkit-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%; }
+    .name a:hover span {
+      background: #737373;
+      -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
+              transform: translate3d(0px, 0px, -30px) rotateX(90deg); }
+    .name a span {
+      display: block;
+      position: relative;
+      padding: 0 3px;
+      -webkit-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+      -webkit-transform-origin: 50% 0%;
+          -ms-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      margin-top: 8px;
+      font-size: .8em; }
+      .name a span:after {
+        content: attr(data-title);
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0 3px;
+        color: #fff;
+        background: #737373;
+        -webkit-transform-origin: 50% 0%;
+            -ms-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+        -webkit-transform: translate3d(0px, 105%, 0px) rotateX(-90deg);
+                transform: translate3d(0px, 105%, 0px) rotateX(-90deg); }
+
+a {
+  text-decoration: none; }
+
+.menu {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  height: 100%;
+  background: #737373; }
+  .menu a {
+    display: block;
+    vertical-align: middle;
+    color: white;
+    line-height: 48px;
+    position: relative;
+    background-color: #FF9E9E;
+    overflow: hidden;
+    height: 14.2vh; }
+    .menu a:hover {
+      z-index: 999;
+      box-shadow: 0 0 75px 0 black;
+      -webkit-transition: .2s;
+              transition: .2s;
+      color: #737373; }
+  .menu h1 {
+    position: absolute;
+    z-index: 5;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 10px #000; }
+
+.menu_container {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  background: #fff;
+  overflow: hidden; }
+
+.logo {
+  margin-top: 15px;
+  text-align: center; }
+  .logo a {
+    color: gray;
+    border: 1px solid gray;
+    padding: 10px;
+    text-decoration: none; }
+    .logo a:hover {
+      color: #737373;
+      border: 1px solid #737373;
+      -webkit-transition: .2s;
+              transition: .2s; }
+
+.animationtext {
+  text-align: center; }
+  .animationtext h1 {
+    font-size: 8em;
+    color: white;
+    margin-top: 50px; }
+  .animationtext h2 {
+    font-size: 5em;
+    color: white; }
+
+.animations {
+  background: #737373; }
+
+.reel {
+  padding: 0px 0px 0px 0px; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.ddesign {
+  background: #737373; }
+  .ddesign span {
+    position: absolute;
+    text-align: center;
+    display: table;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: 1.7em;
+    display: block; }
+  .ddesign a:hover {
+    background: white; }
+  .ddesign a .hovertext {
+    opacity: 0;
+    -webkit-transition: .5s;
+            transition: .5s;
+    height: 100%; }
+    .ddesign a .hovertext:hover {
+      opacity: 1;
+      -webkit-transition: .5s;
+              transition: .5s;
+      background: rgba(0, 0, 0, 0.3); }
+
+.slidedown:hover .hovertext {
+  padding-top: 70px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-transition: .5s;
+          transition: .5s; }
+
+.btn {
+  font-size: 1em;
+  color: #737373;
+  -webkit-transition: .5s;
+          transition: .5s; }
+  .btn:hover {
+    color: #FF9E9E;
+    -webkit-transition: .5s;
+            transition: .5s; }
+
+.fa {
+  font-size: 2em; }
+
+.contact {
+  margin-top: 70px;
+  text-align: center; }
+  .contact a {
+    color: #333333;
+    font-family: "Arial",sans-serif; }
+
+.about {
+  text-align: center; }
+  .about p {
+    font-family: "Arial",sans-serif; }
+
+.skills {
+  text-align: center; }
+  .skills img {
+    width: 100%;
+    background: #333333; }
+  .skills p {
+    font-family: "Arial",sans-serif; }
+
+.outer {
+  background: red; }
+
+@media screen and (min-width: 758px) {
+  body {
+    background: #737373; }
+
+  .name a span {
+    font-size: 1em; }
+
+  a {
+    text-decoration: none; }
+
+  .menu {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    height: 100%; }
+    .menu a {
+      display: table-cell;
+      vertical-align: middle;
+      color: #fff;
+      line-height: 48px;
+      position: relative;
+      overflow: hidd en;
+      padding: 0px 5px 0px 5px;
+      -webkit-transition: .5s;
+              transition: .5s; }
+      .menu a:hover {
+        z-index: 999;
+        box-shadow: 0 0 75px 0 black;
+        color: white;
+        -webkit-transition: .5s;
+                transition: .5s;
+        padding-bottom: 25px; }
+    .menu h1 {
+      position: absolute;
+      z-index: 5;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      font-size: 1.5em; }
+
+  .menu_container {
+    position: fixed;
+    top: 220px;
+    right: 0;
+    bottom: 220px;
+    left: 0;
+    overflow: hidden; }
+
+  .fa {
+    font-size: 3em; }
+
+  .footer {
+    -webkit-transition: .5s;
+            transition: .5s; }
+    .footer .container {
+      padding: 20px 0px 20px 0px; } }
+@media screen and (min-width: 1080px) {
+  .menu h1 {
+    font-size: 2.5em; }
+
+  .menu_container {
+    top: 150px;
+    bottom: 150px; } }
+
+/*# sourceMappingURL=main.css.map */
