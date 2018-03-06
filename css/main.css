@@ -271,7 +271,7 @@ a {
 
 @media screen and (min-width: 758px) {
   body {
-    background: #737373; }
+    background: #fff; }
 
   .name a span {
     font-size: 1em; }
