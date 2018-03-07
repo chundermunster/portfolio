@@ -192,7 +192,11 @@ a {
   background: #737373; }
 
 .reel {
-  padding: 20px 20px 20px 20px; }
+  padding: 0px 0px 0px 0px; }
+
+.smusic {
+  padding: 20px 20px 20px 20px;
+}
 
 .navbar {
   margin-bottom: 0px; }
