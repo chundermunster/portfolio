@@ -137,7 +137,7 @@ a {
     position: relative;
     background-color: #FF9E9E;
     overflow: hidden;
-    height: 13.2vh; }
+    height: 12.2vh; }
     .menu a:hover {
       z-index: 999;
       box-shadow: 0 0 75px 0 black;
@@ -148,7 +148,7 @@ a {
     position: absolute;
     z-index: 5;
     display: inline-block;
-    top: 50%;
+    top: 30%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
