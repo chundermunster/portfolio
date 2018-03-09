@@ -137,7 +137,7 @@ a {
     position: relative;
     background-color: #FF9E9E;
     overflow: hidden;
-    height: 14.2vh; }
+    height: 13.2vh; }
     .menu a:hover {
       z-index: 999;
       box-shadow: 0 0 75px 0 black;
@@ -272,6 +272,8 @@ a {
 
 .outer {
   background: red; }
+
+
 
 @media screen and (min-width: 758px) {
   body {
