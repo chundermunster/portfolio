@@ -75,6 +75,10 @@ body {
   box-shadow: none; }
 
 /** \e091 **/
+
+.myname {
+  font-size: 1.5em;
+}
 .name {
   font-size: 1.6em;
   text-align: center; }
