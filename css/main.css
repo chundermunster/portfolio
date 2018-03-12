@@ -139,7 +139,7 @@ a {
     color: white;
     line-height: 48px;
     position: relative;
-    background-color: #FF9E9E;
+    background-color: #ff436c;
     overflow: hidden;
     height: 12.2vh; }
     .menu a:hover {
@@ -185,15 +185,41 @@ a {
 .animationtext {
   text-align: center; }
   .animationtext h1 {
-    font-size: 8em;
-    color: white;
-    margin-top: 50px; }
+    font-size: 3em;
+    color: gray;
+    margin-top: 60px;
+    margin-bottom: 50px; }
   .animationtext h2 {
-    font-size: 5em;
-    color: white; }
+    font-size: 2em;
+    color: gray; }
+
+
+
+.bchtext h1{
+  font-size: 3em;
+}
+
+.bchvideo{
+  margin-bottom: 50px;
+}
+
+.bchphotos{
+  padding:15px;
+}
+
+.dmgimages{
+  margin-bottom: 50px;
+}
+
+.discription p {
+  font-size: 1.5em;
+  color: gray;
+  font-family: Arial;
+  margin-bottom: 50px;
+}
 
 .animations {
-  background: #737373; }
+  background: #fff; }
 
 .reel {
   padding: 0px 0px 0px 0px; }
@@ -206,7 +232,7 @@ a {
   margin-bottom: 0px; }
 
 .ddesign {
-  background: #737373; }
+  background: #fff; }
   .ddesign span {
     position: absolute;
     text-align: center;
@@ -247,7 +273,7 @@ a {
   -webkit-transition: .5s;
           transition: .5s; }
   .btn:hover {
-    color: #FF9E9E;
+    color: #ff436c;
     -webkit-transition: .5s;
             transition: .5s; }
 
@@ -345,5 +371,6 @@ a {
   .menu_container {
     top: 150px;
     bottom: 150px; } }
+
 
 /*# sourceMappingURL=main.css.map */

@@ -23,6 +23,16 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add jQuery library -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -31,7 +41,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-1 backbtn">
-                                <a href="index.html"><span class="glyphicon glyphicon-arrow-left arrow" aria-hidden="true" data-title="back"></span></a>
+                                <a href="portfolio.html"><span class="glyphicon glyphicon-arrow-left arrow" aria-hidden="true" data-title="\e091"></span></a>
                             </div>
                             <div class="col-xs-6 col-xs-offset-2 name">
                                 <a href="index.html"><span data-title="Chunder Munster">Chunder Munster</span></a>
@@ -41,54 +51,39 @@
                 </ul>
               </div>
         </nav>
-    <div class="container contact">
+    <div class="container ddesign">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>Contact</h1>
-                <h2 class="myname">Kevin Richetelli</h2>
-                <p>(860)-510-1775</p>
-                <a href="mailto:chundermunster@gmail.com">chundermunster@gmail.com</a>
+            <div class="col-xs-12 animationtext">
+                <h1>Boston Children's Hospital LED Wall</h1>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="https://soundcloud.com/chundermunster" target="_blank">SoundCloud</a>
+            <div class="col-xs-12 col-md-8 col-md-offset-2 discription">
+                <p>Interactive LED wall located in the main lobby of the Boston Children’s Hospital designed to therapeutically benefit pediatric patients and families by interacting with the different scenes.</p>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="https://instagram.com/chunder_munster/" target="_blank">Instagram</a>
+            <div class="col-xs-12 bchvideo">
+                <iframe width="100%" height="338" src="https://www.youtube.com/embed/iJ3bpEtzg44?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="https://www.linkedin.com/in/kevinrichetelli">Linkedin</a>
-            </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="https://vimeo.com/user20736333">Vimeo</a>
-            </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="img/Kevin_Richetelli_Resume.pdf" target="_blank">Resume</a>
-            </div>
+            <div class="bchphotos">
+                <div class="col-xs-12 col-md-4 reel slidedown">
+                    <a class="fancybox" rel="gallery1" href="./img/bch_photo_1.png" title="Ant Farm Scene">
+                    <img src="./img/bch_photo_1.png" width="100%" alt="Ant Farm Scene"/>
+                    <span class="hovertext">Ant Farm Scene</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4 reel slidedown">
+                    <a class="fancybox" rel="gallery1" href="./img/bch_photo_2.png" title="Particle Scene">
+                    <img src="./img/bch_photo_2.png" width="100%" alt="Particle Scene"/>
+                    <span class="hovertext">Particle Scene</span>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4 reel slidedown">
+                    <a class="fancybox" rel="gallery1" href="./img/bch_photo_3.png" title="Ball Pit Scene">
+                    <img src="./img/bch_photo_3.png" width="100%" alt="Ball Pit Scene"/>
+                    <span class="hovertext">Ball Pit Scene</span>
+                    </a>
+                </div> 
+            </div>   
         </div>
     </div>
-
-    <div class="container about">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>about</h1>
-            </div>
-            <div class="col-md-8 col-md-offset-2">
-                <p>To create visual effects that excite others by expanding their minds into a world they may not have considered. I think of myself as a lifelong learner, striving to grow, create and design work collaboratively. I work everyday to be the best I can be and to respect other’s ideas, talents and to encourage each team member throughout every project I work on.</p>
-            </div>
-        </div>
-    </div>
-<!--
-    <div class="container skills">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>skills</h1>
-            </div>
-            <div class="col-md-8 col-md-offset-2">
-                <img src="./img/aboutskills.png">
-            </div>
-        </div>
-    </div>
--->
         
     
 
@@ -110,4 +105,10 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
     </body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
+    </script>
+</html>
 </html>

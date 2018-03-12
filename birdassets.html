@@ -23,6 +23,16 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add jQuery library -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -31,64 +41,47 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-1 backbtn">
-                                <a href="index.html"><span class="glyphicon glyphicon-arrow-left arrow" aria-hidden="true" data-title="back"></span></a>
+                                <a href="dmg.html"><span class="glyphicon glyphicon-arrow-left arrow" aria-hidden="true" data-title="\e091"></span></a>
                             </div>
                             <div class="col-xs-6 col-xs-offset-2 name">
-                                <a href="index.html"><span data-title="Chunder Munster">Chunder Munster</span></a>
+                                <a href="index.html"><span data-title="Chunder Munster">Chunder Munsterr</span></a>
                             </div>
                         </div>
                     </div>
                 </ul>
               </div>
         </nav>
-    <div class="container contact">
+    <div class="container ddesign">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>Contact</h1>
-                <h2 class="myname">Kevin Richetelli</h2>
-                <p>(860)-510-1775</p>
-                <a href="mailto:chundermunster@gmail.com">chundermunster@gmail.com</a>
+            <div class="col-xs-12 animationtext">
+                <h1>Bird Assets</h1>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="https://soundcloud.com/chundermunster" target="_blank">SoundCloud</a>
+            <div class="col-xs-12 col-md-6 reel">
+                <img src="./img/Blue_Right.gif" width="100%" alt="Blue Right"/>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="https://instagram.com/chunder_munster/" target="_blank">Instagram</a>
+            <div class="col-xs-12 col-md-6 reel">
+                <img src="./img/Blue_Wrong.gif" width="100%" alt="Blue Wrong"/>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="https://www.linkedin.com/in/kevinrichetelli">Linkedin</a>
+            <div class="col-xs-12 col-md-6 reel">
+                <img src="./img/Green_Right.gif" width="100%" alt="Green Right"/>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="https://vimeo.com/user20736333">Vimeo</a>
+            <div class="col-xs-12 col-md-6 reel">
+                <img src="./img/Green_Wrong.gif" width="100%" alt="Green Wrong"/>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-                <a class="links" href="img/Kevin_Richetelli_Resume.pdf" target="_blank">Resume</a>
+            <div class="col-xs-12 col-md-6 reel">
+                <img src="./img/Red_Right.gif" width="100%" alt="Red Right"/>
+            </div>
+            <div class="col-xs-12 col-md-6 reel">
+                <img src="./img/Red_Wrong.gif" width="100%" alt="Red Wrong"/>
+            </div>
+            <div class="col-xs-12 col-md-6 reel">
+                <img src="./img/Yellow_Right.gif" width="100%" alt="Yellow Right"/>
+            </div>
+            <div class="col-xs-12 col-md-6 reel">
+                <img src="./img/Yellow_Wrong.gif" width="100%" alt="Yellow Wrong"/>
             </div>
         </div>
     </div>
-
-    <div class="container about">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>about</h1>
-            </div>
-            <div class="col-md-8 col-md-offset-2">
-                <p>To create visual effects that excite others by expanding their minds into a world they may not have considered. I think of myself as a lifelong learner, striving to grow, create and design work collaboratively. I work everyday to be the best I can be and to respect other’s ideas, talents and to encourage each team member throughout every project I work on.</p>
-            </div>
-        </div>
-    </div>
-<!--
-    <div class="container skills">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h1>skills</h1>
-            </div>
-            <div class="col-md-8 col-md-offset-2">
-                <img src="./img/aboutskills.png">
-            </div>
-        </div>
-    </div>
--->
         
     
 
@@ -110,4 +103,10 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
     </body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
+    </script>
+</html>
 </html>
