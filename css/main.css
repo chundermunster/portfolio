@@ -141,7 +141,7 @@ a {
     position: relative;
     background-color: #ff436c;
     overflow: hidden;
-    height: 21vh; }
+    height: 18vh; }
     .menu a:hover {
       z-index: 999;
       box-shadow: 0 0 75px 0 black;
