@@ -141,7 +141,7 @@ a {
     position: relative;
     background-color: #ff436c;
     overflow: hidden;
-    height: 12.2vh; }
+    height: 21vh; }
     .menu a:hover {
       z-index: 999;
       box-shadow: 0 0 75px 0 black;
@@ -270,17 +270,21 @@ a {
     display: block; }
   .portdesign a:hover {
     background: white; }
-  .portdesign a .hovertext {
-    opacity: 0;
+  .portdesign a .porttext {
     -webkit-transition: .5s;
             transition: .5s;
-    height: 80%; 
-    margin-top: 56px;}
-    .portdesign a .hovertext:hover {
-      opacity: 1;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); }
+    .portdesign a .porttext:hover {
       -webkit-transition: .5s;
               transition: .5s;
-      background: rgba(0, 0, 0, 0.3); }
+      background: rgba(0, 0, 0, 0);
+      color: black;}
+
+.porttext:hover{
+
+}
+
 
 .slidedown:hover .hovertext {
   padding-top: 70px; }
