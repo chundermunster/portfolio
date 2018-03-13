@@ -193,7 +193,9 @@ a {
     font-size: 2em;
     color: gray; }
 
-
+.porttitles{
+  color: gray;
+}
 
 .bchtext h1{
   font-size: 3em;
@@ -250,6 +252,31 @@ a {
             transition: .5s;
     height: 100%; }
     .ddesign a .hovertext:hover {
+      opacity: 1;
+      -webkit-transition: .5s;
+              transition: .5s;
+      background: rgba(0, 0, 0, 0.3); }
+
+.portdesign {
+  background: #fff; }
+  .portdesign span {
+    position: absolute;
+    text-align: center;
+    display: table;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: 1.7em;
+    display: block; }
+  .portdesign a:hover {
+    background: white; }
+  .portdesign a .hovertext {
+    opacity: 0;
+    -webkit-transition: .5s;
+            transition: .5s;
+    height: 80%; 
+    margin-top: 56px;}
+    .portdesign a .hovertext:hover {
       opacity: 1;
       -webkit-transition: .5s;
               transition: .5s;
