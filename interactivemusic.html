@@ -6,12 +6,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Chunder Munster</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <script src="https://use.typekit.net/suw1ppb.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
@@ -21,41 +20,80 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/ihover.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,900" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-              <div id="navbar">
-                <ul class="nav navbar-nav">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-1 backbtn">
-                                <a href="portfolio.html"><span class="glyphicon glyphicon-arrow-left arrow" aria-hidden="true" data-title="back"></span></a>
-                            </div>
-                            <div class="col-xs-6 col-xs-offset-2 name">
-                                <a href="index.html"><span data-title="Kevin Richetelli">Kevin Richetelli</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-              </div>
-        </nav>
-    <div class="container animations">
-        <div class="row">
-            <div class="col-xs-12 animationtext">
-                <h1>Interactive Music Experience</h1>
-            </div>
-            <div class="col-xs-12 col-md-8 col-md-offset-2 discription">
-                <p>Cityscape is an interactive experience using MIDI instruments and animation. It is designed for the individual music artist that plays live or wants to improvise a song that is already programmed in their DAW system and wants to add animations to enhance their performance.</p>
-            </div>
-            <div class="col-xs-12 video">
-                <iframe src="https://player.vimeo.com/video/267263382?color=c9ff23" width="100%" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-        </div>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
     </div>
-        
-    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="interactive.html">Interactive Media</a></li>
+        <li><a href="img/Chunder_Munster_Resume.pdf">Resume</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container" id="worktop">
+      <div class="row">
+        <div class="col-xs-12" id="title">
+          <h1>Interactive Music Experiences</h1>
+        </div>
+        <div class="col-xs-12" id="title">
+          <p>Cityscape is an interactive experience using MIDI instruments and animation. It is designed for the individual music artist that plays live or wants to improvise a song that is already programmed in their DAW system and wants to add animations to enhance their performance.</p>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/267263382?color=c9ff23&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
+
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

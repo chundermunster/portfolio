@@ -6,12 +6,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Chunder Munster</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <script src="https://use.typekit.net/suw1ppb.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
@@ -21,41 +20,75 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/ihover.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,900" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
 
-        <!-- Add jQuery library -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
 
+              // Store hash
+              var hash = this.hash;
 
-        <!-- Add fancyBox -->
-        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-              <div id="navbar">
-                <ul class="nav navbar-nav">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-1 backbtn">
-                                <a href="dmg.html"><span class="glyphicon glyphicon-arrow-left arrow" aria-hidden="true" data-title="\e091"></span></a>
-                            </div>
-                            <div class="col-xs-6 col-xs-offset-2 name">
-                                <a href="index.html"><span data-title="Kevin Richetelli">Kevin Richetelli</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-              </div>
-        </nav>
-    <div class="container ddesign">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="interactive.html">Interactive Media</a></li>
+        <li><a href="interactivegames.html">Back</a></li>
+        <li><a href="img/Chunder_Munster_Resume.pdf">Resume</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container" id="worktop">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-xs-12" id="title">
+          <h1>Interactive Bird Game</h1>
+        </div>
+        <div class="col-xs-12" id="title">
+          <p>Bird assets animated and modeled in Cinema 4D. Imported into Unity</p>
+        </div>
+        <div class="container">
         <div class="row">
-            <div class="col-xs-12 animationtext">
-                <h1>Bird Assets</h1>
-            </div>
             <div class="col-xs-12 col-md-6 reel">
                 <img src="./img/Blue_Right.gif" width="100%" alt="Blue Right"/>
             </div>
@@ -82,7 +115,9 @@
             </div>
         </div>
     </div>
-        
+      </div>
+    </div>
+
     
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -103,10 +138,4 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
     </body>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $(".fancybox").fancybox();
-    });
-    </script>
-</html>
 </html>

@@ -6,13 +6,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Chunder Munster</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <script src="https://use.typekit.net/suw1ppb.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
@@ -22,83 +20,192 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/ihover.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,900" rel="stylesheet">
+
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-default">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
 
-              <div id="navbar">
-                <ul class="nav navbar-nav">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-6 col-xs-offset-3 name">
-                                <a href="index.html"><span data-title="Kevin Richetelli">Kevin Richetelli</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-              </div>
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
 
-        </nav>
-    <div class="container">
-        <div class="row">
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
            
-         </div>
-            <!-- <div class="col-xs-1">
-                <span class="glyphicon glyphicon-arrow-left arrow" aria-hidden="true"></span>
-            </div> -->
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+    </head>
+    <body class="index">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#reel">Reel</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li> 
+        <li><a href="img/Chunder_Munster_Resume.pdf">Resume</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div id="logo">
+      <div class="row">
+        <div class="col-md-12" id="home"> 
+        </div>
+      </div>    
+    </div>
+
+    <div class="jumbotron" id="reel">
+      <div class="container">
+        <h1>Reel</h1>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/273996579?color=c9ff23&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
+
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>About</h1>
+            </div>
+            <div class="col-md-12">
+                <p>I like to make things and things like to make me.  Making people think in a different direction is the best possible way to make me happy.  People ask me, “how do you do it?” I say “...I don’t know.”  I make you stuff so you don’t have to do what I have to do.  Zip it up, zip it out.</p>
+            </div>
+            <div class="col-md-12">
+                <h2>Check Out My Social Media</h2>
+            </div>
+            <div class="social">
+              <div class="col-md-12">
+                <div class="col-md-12">
+                    <a class="links" href="https://soundcloud.com/chundermunster" target="_blank">SoundCloud</a>
+                </div>
+                <div class="col-md-12">
+                    <a class="links" href="https://instagram.com/chunder_munster/" target="_blank">Instagram</a>
+                </div>
+                <div class="col-md-12">
+                    <a class="links" href="https://vimeo.com/user85985542">Vimeo</a>
+                </div>
+              </div>
+            </div>
         </div>
     </div>
-        
-    <section class="menu_container">
-      <div class="menu">
-        <a href="portfolio.html"><img class="imgrotate" src="./img/glassball.jpg" alt="portfolio" width="100%">
-          <h1>Portfolio</h1>
-        </a>
-        <a href="daily.html"><img class="imgrotate" src="./img/growth.png" alt="animation" width="100%">
-          <h1>Beats and Graphics</h1>
-        </a>
-        <a href="music.html"><img class="imgrotate" src="./img/upclosearray.jpg" alt="music" width="100%">
-          <h1>Music</h1>
-        </a>
-        <a href="contact.html"><img src="./img/rocknets.jpg" alt="contact" width="100%">
-          <h1>Contact</h1>
-        </a>
-      </div>
-    </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-            <div class="col-xs-2 col-xs-offset-1 socialicon">
-                <a href="https://twitter.com/Chunder_Munster"  class="btn btn-social-icon btn-twitter">
-                    <span class="fa fa-twitter"></span>
-                </a>
-            </div>
-            <div class="col-xs-2 socialicon">
-                <a href="https://www.linkedin.com/in/kevinrichetelli" class="btn btn-social-icon btn-linkedin">
-                    <span class="fa fa-linkedin"></span>
-                </a>
-            </div>
-            <div class="col-xs-2 socialicon">
-                <a href="https://www.instagram.com/chunder_munster/" class="btn btn-social-icon btn-instagram">
-                    <span class="fa fa-instagram"></span>
-                </a>
-            </div>
-            <div class="col-xs-2 socialicon">
-                <a href="https://vimeo.com/user20736333" class="btn btn-social-icon btn-vimeo">
-                    <span class="fa fa-vimeo"></span>
-                </a>
-            </div>
-            <div class="col-xs-2 socialicon">
-                <a href="https://soundcloud.com/chundermunster" class="btn btn-social-icon btn-soundcloud">
-                    <span class="fa fa-soundcloud"></span>
-                </a>
-            </div>
+    <div class="container" id="work">
+      <h1>Work</h1>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="ih-item square effect7"><a href="motiongraphics.html">
+            <div class="img"><img src="./img/ball_tunnel.png" alt="img"></div>
+              <div class="info">
+                <h3>Motion Graphics</h3>
+                <p>Animations</p>
+            </div></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="ih-item square effect7"><a href="interactive.html">
+            <div class="img"><img src="./img/interactive_music_cover.png" alt="img"></div>
+              <div class="info">
+                <h3>Interactive Media</h3>
+                <p>Freelance and Master's Thesis Project</p>
+            </div></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="ih-item square effect7"><a href="stills.html">
+            <div class="img"><img src="./img/gas_trails.png" alt="img"></div>
+              <div class="info">
+                <h3>Other Projects</h3>
+                <p>Personal Series</p>
+            </div></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="ih-item square effect7"><a href="logoandvectors.html">
+            <div class="img"><img src="./img/logosandvectors.png" alt="img"></div>
+              <div class="info">
+                <h3>Logos and Vectors</h3>
+                <p>Illustrator and Photoshop</p>
+            </div></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="ih-item square effect7"><a href="bushnell.html">
+            <div class="img"><img src="./img/Bushnell.png" alt="img"></div>
+              <div class="info">
+                <h3>Bushnell Performing Arts</h3>
+                <p>Camera Tracking</p>
+            </div></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="ih-item square effect7"><a href="music.html">
+            <div class="img"><img src="./img/speakers.png" alt="img"></div>
+              <div class="info">
+                <h3>Music</h3>
+                <p>Music I Make</p>
+            </div></a>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <div class="container contact" id="contact">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Contact</h1>
+                <h2 class="myname">Chunder Munster: Zip me a line</h2>
+                <a href="mailto:chundermunster@gmail.com">chundermunster@gmail.com</a>
+            </div>
+            <div class="col-md-12">
+                <a class="links" href="https://soundcloud.com/chundermunster" target="_blank">SoundCloud</a>
+            </div>
+            <div class="col-md-12">
+                <a class="links" href="https://instagram.com/chunder_munster/" target="_blank">Instagram</a>
+            </div>
+            <div class="col-md-12">
+                <a class="links" href="https://vimeo.com/user85985542">Vimeo</a>
+            </div>
+            <div class="col-md-12">
+                <a class="links" href="img/Chunder_Munster_Resume.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
