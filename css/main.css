@@ -5,21 +5,22 @@
    ========================================================================== */
 
 .index{
-	background-color: #fff;
+	background-color: #252525;
 }
 body{
 	padding-top: 0px;
+	background-color: #252525;
 }
 
 h1{
-	color: #464646!important;
+	color: #f1f1f1!important;
 	font-size: 63px!important;
 	font-family: 'Montserrat', sans-serif!important;
 	font-weight: 900!important;
 }
 
 h2{
-	color: #464646!important;
+	color: #4c94de!important;
 	font-family: 'Montserrat', sans-serif!important;
 	font-weight: 400!important;
 }
@@ -32,13 +33,13 @@ h3{
 
 p{
 	font-size: 20px;
-	color: #464646;
+	color: #a0a0a0;
 	font-family: 'Montserrat', sans-serif!important;
 	font-weight:300!important;
 }
 
 a{
-	color:#464646;
+	color:#a0a0a0;
 	font-family: 'Montserrat', sans-serif!important;
 	font-weight: 300!important;
 }
@@ -79,7 +80,7 @@ a:hover{
 }
 
 .jumbotron{
-	background-color: #fff;
+	background-color: #252525;
 }
 
 #home{
@@ -180,11 +181,12 @@ a:hover{
 #reel{
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-color:#fff;
+	background-color:#252525;
 }
 
 #worktop{
 	padding-top: 100px;
+	background-color: #252525;
 }
 
 #about{
